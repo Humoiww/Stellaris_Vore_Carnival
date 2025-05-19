@@ -1,0 +1,249 @@
+vore_livestock = {
+	category = vore_lover #想要劳动力机制起作用要么阶层要么工作，这里使用特殊阶层方便后续开发
+	# is_capped_by_modifier = yes
+
+	# tags = { food }
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+	possible_precalc = can_fill_worker_job
+	possible = {
+		# OR = {
+		# 	has_citizenship_type = {
+		# 		type = citizenship_slavery
+		# 		country = owner
+		# 	}
+		# 	has_citizenship_type = {
+		# 		type = citizenship_exploited_drone
+		# 		country = owner
+		# 	}
+		# }
+		# has_slavery_type = { type = slavery_livestock }
+		has_trait = trait_vc_vore
+
+	}
+
+	resources = {
+		category = planet_vc_vore
+		produces = {
+			physics_research = 0.5
+			engineering_research = 0.5
+			society_research = 0.5
+		}
+
+		produces = {
+			trigger = { is_lithoid = no }
+			food = 4
+		}
+
+		# 石制人口
+		produces = {
+			trigger = { is_lithoid = yes }
+			minerals = 4
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = { always = yes }
+		planet_amenities_add = 50
+		mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
+	}
+
+
+
+	weight = {
+		weight = 10000
+	}
+}
+
+
+# mushou = {                                            # 牧首
+#     category = ruler                                  # 阶级(统治者)
+#     condition_string = WORKER_JOB_TRIGGER             # 用于检测这个工作是否可用的一系列逻辑
+#                                                       # 在Stellaris\common\scripted_triggers里面
+#     possible_precalc = can_fill_ruler_job             # 能胜任什么工作，game_rule里面改
+#     building_icon = building_research_lab_1           # 这个工作的背景建筑图标，图标位置同建筑
+#     clothes_texture_index = 3                         # 外表，仅影响外观
+   
+#     planet_modifier = {                               # 星球修正，同建筑
+#      planet_amenities_add = 500                         # 舒适度
+#      planet_crime_add = -25
+#      pop_livestock_bonus_workforce_mult = 0.1
+#      planet_pops_produces_mult = 0.1
+
+
+#     }
+
+#     triggered_planet_modifier = {
+#         potential = {
+#             enforcer_is_educator_trigger = no
+#         }
+#         planet_crime_add = -25
+#         planet_stability_add = 1
+#     }
+#     triggered_planet_modifier = {
+#         potential = {
+#             enforcer_is_educator_trigger = yes
+#         }
+#         planet_crime_add = -20
+#         pop_government_ethic_attraction = 0.1
+#     }
+    
+#     resources = {                                     # 生产
+# 		category = planet_researchers                 # 岗位
+# 		upkeep = {                                    # 维护费
+# 			energy = 10                               # 能源
+# 		}
+# 		produces = {
+# 			trigger = {
+# 				owner = {
+# 					NOT = { has_deficit = nanites }
+# 				}
+# 			}
+# 			society_research = 30                                # 社会学
+
+# 		}
+
+# }      
+#     weight = {                                          # pop意图工作的权重，拥有高权重的pop会导致低权重的pop被替换
+#         weight = 10000                                  # @指引用数值
+           
+#     }
+# }
+
+
+# muzhe = {                                             # 牧者
+#     category = specialist                             # 阶级(专家)
+#     condition_string = specialist_JOB_TRIGGER         # 用于检测这个工作是否可用的一系列逻辑
+#                                                       # 在Stellaris\common\scripted_triggers里面
+#     possible_precalc = can_fill_specialist_job        # 能胜任什么工作，game_rule里面改
+#     building_icon = building_research_lab_1           # 这个工作的背景建筑图标，图标位置同建筑
+#     clothes_texture_index = 3                         # 外表，仅影响外观
+   
+#     planet_modifier = {                               # 星球修正，同建筑
+#        planet_amenities_add = 200                       # 舒适度
+#        pop_livestock_bonus_workforce_mult = 0.05
+#        planet_pops_produces_mult = 0.01
+
+
+
+#     }
+    
+#     resources = {                                     # 生产
+# 		category = planet_researchers                 # 岗位
+# 		upkeep = {                                    # 维护费
+# 			energy = 5                                # 能源
+# 		}
+# 		produces = {
+# 			trigger = {
+# 				owner = {
+# 					NOT = { has_deficit = nanites }
+# 				}
+# 			}
+# 			society_research = 10                                # 社会学
+# 		}
+
+# }      
+#     weight = {                                          # pop意图工作的权重，拥有高权重的pop会导致低权重的pop被替换
+#         weight = 1000                  # @指引用数值
+           
+#     }
+# }
+
+
+# rmushou = {                                            # 牧首
+#     category = complex_drone                                  # 阶级(统治者)
+#     condition_string = WORKER_JOB_TRIGGER             # 用于检测这个工作是否可用的一系列逻辑
+#     # 在Stellaris\common\scripted_triggers里面
+#     possible_precalc = can_fill_ruler_job             # 能胜任什么工作，game_rule里面改
+#     building_icon = building_research_lab_1           # 这个工作的背景建筑图标，图标位置同建筑
+#     clothes_texture_index = 3                         # 外表，仅影响外观
+
+#     planet_modifier = {                               # 星球修正，同建筑
+#         planet_amenities_add = 500                        # 舒适度
+#         planet_crime_no_happiness_add = -20
+#         worker_and_simple_drone_cat_bonus_workforce_mult = 0.02
+#         planet_pops_produces_mult = 0.1
+
+#     }
+#     triggered_planet_modifier = {
+#         potential = {
+#             enforcer_is_educator_trigger = no
+#         }
+#         planet_crime_no_happiness_add = -25
+#         planet_stability_add = 1
+#     }
+#     triggered_planet_modifier = {
+#         potential = {
+#             enforcer_is_educator_trigger = yes
+#         }
+#         planet_crime_no_happiness_add = -20
+#         pop_government_ethic_attraction = 0.1
+#     }
+
+#     resources = {                                     # 生产
+#         category = planet_researchers                 # 岗位
+#         upkeep = {                                    # 维护费
+#             energy = 10                               # 能源
+#         }
+#         produces = {
+#             trigger = {
+#                 owner = {
+#                     NOT = { has_deficit = nanites }
+#                 }
+#             }
+#             society_research = 30                                # 社会学
+#         }
+
+#     }
+#     weight = {                                          # pop意图工作的权重，拥有高权重的pop会导致低权重的pop被替换
+#         weight = 10000                                  # @指引用数值
+
+#     }
+# }
+
+
+# rmuzhe = {                                             # 牧者
+#     category = complex_drone                             # 阶级(专家)
+#     condition_string = specialist_JOB_TRIGGER         # 用于检测这个工作是否可用的一系列逻辑
+#     # 在Stellaris\common\scripted_triggers里面
+#     possible_precalc = can_fill_specialist_job        # 能胜任什么工作，game_rule里面改
+#     building_icon = building_research_lab_1           # 这个工作的背景建筑图标，图标位置同建筑
+#     clothes_texture_index = 3                         # 外表，仅影响外观
+
+#     planet_modifier = {                               # 星球修正，同建筑
+#         planet_amenities_add = 200                       # 舒适度
+#         planet_jobs_Slave_produces_mult = 0.01
+#         planet_crime_no_happiness_add = -5
+#         planet_pops_produces_mult = 0.01
+
+#     }
+
+#     resources = {                                     # 生产
+#         category = planet_researchers                 # 岗位
+#         upkeep = {                                    # 维护费
+#             energy = 5                                # 能源
+#         }
+#         produces = {
+#             trigger = {
+#                 owner = {
+#                     NOT = { has_deficit = nanites }
+#                 }
+#             }
+#             society_research = 10                                # 社会学
+#         }
+
+#     }
+#     weight = {                                          # pop意图工作的权重，拥有高权重的pop会导致低权重的pop被替换
+#         weight = 1000                  # @指引用数值
+
+#     }
+# }
+
+
+
+

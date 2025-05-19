@@ -1,0 +1,68 @@
+trait_vc_vore = {                                      # ID应该以“trait”开头
+    cost = 6                                       # 花费
+    initial = no                                 # 能否在初始界面被选择
+    randomized = no                                # 是否可以随机生成该特质
+    modification = no                              # 是否能够被修改
+    improves_leaders = no                          # 是否影响到领袖特质生成
+    advanced_trait = no                           # 是否是高级特质
+    allowed_archetypes = { BIOLOGICAL   ROBOT   MACHINE   LITHOID   SHENHAI   UNITED_FLEET   WARSHIPGIRL Schale  Magical_Bitch Magical_Girl Lust_Girl TENTACLE }            # 允许的种族类别（有机，机械等）
+    
+    icon = "gfx/interface/icons/traits/trait_vorec_relentless_vore_body.dds" # 图标
+    
+    slave_cost = {energy = 1000}                   # 进入奴隶市场被售卖后所得
+
+    modifier = {    #人口的修正
+    #    foundry_jobs_bonus_workforce_mult = 0.5                # 岗位合金产出+50%
+    #    artisan_jobs_bonus_workforce_mult = 0.5        # 岗位消费品产出+50%
+    #    leader_lifespan_add = 20                              # 领袖寿命
+    #    leader_skill_levels = 1                               # 领袖等级上限
+        # pop_cat_vore_lover_bonus_workforce_mult = 1
+        # foundry_jobs_bonus_workforce_mult = 0.05
+        # pop_foundry_bonus_workforce_mult = 0.15
+        # planet_jobs_produces_mult = 0.1
+        ##
+        livestock_jobs_bonus_workforce_mult = 1
+        pop_cat_vore_lover_happiness = 1
+        pop_cat_ruler_happiness = -0.30
+		pop_cat_specialist_happiness = -0.30
+		pop_cat_worker_happiness = -0.3 
+    }
+
+
+    triggered_pop_group_modifier = {
+            potential = {
+                always = yes
+            }
+            pop_bonus_workforce_mult = 0.002
+            # mult = owner.value:sensual_snake_eyes_mult
+            mult = owner.origin_vore_carnival_vored_pops
+	}
+    # triggered_pop_group_modifier = { #条件人口修正
+	# 	potential = {
+	# 		root.owner = {check_variable = { which = origin_vore_carnival_vored_pops value > 10 }}
+	# 	}
+	# 	foundry_jobs_bonus_workforce_mult = root.owner.origin_vore_carnival_vored_pops #结果莫名其妙
+
+	# }
+
+
+
+    resources = {
+	# category = planet_researchers
+	# produces = {
+	# 	physics_research = 4
+	# 	engineering_research = 4
+	# 	society_research = 4
+	# }
+        # produces = {
+        #     has_job = vore_livestock
+        #     unity = 1
+        # }
+	# upkeep = {
+	# 	consumer_goods = 2
+	# }
+}
+    custom_tooltip = trait_vc_vore_tooltip
+    # custom_tooltip = vc_vore_tooltip
+}
+

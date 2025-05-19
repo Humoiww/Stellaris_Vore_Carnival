@@ -1,0 +1,17 @@
+
+# 增加吞噬人口数
+# 输入参数：
+# POINTS （实数）
+add_origin_vore_carnival_vored_pops = {
+	optimize_memory
+	# change_variable = { which = origin_female_in_shadow_trust value = $POINTS$ }
+	change_variable = { which = origin_vore_carnival_vored_pops value = $POINTS$ }
+
+}
+
+calculate_vore_species_height = {
+	optimize_memory
+	set_variable = { which = to_added_variable value = origin_vore_carnival_vored_pops }
+	divide_variable = {which = to_added_variable value = $POINTS$ }
+	change_variable = { which = origin_vore_species_height value =to_added_variable }
+}

@@ -1,0 +1,50 @@
+origin_vore_carnival = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origin_vc_voracious_carnivour.dds"
+	picture = GFX_origin_vc_voracious_carnivour
+	
+
+
+
+	possible = {
+		species_archetype = { NOT = { value = MACHINE } }
+		# civics = {
+		# 	NOR = {
+		# 		value = civic_augmentation_bazaars
+		# 		value = civic_permanent_employment
+		# 		value = civic_idyllic_bloom
+		# 		value = civic_hive_idyllic_bloom
+		# 		value = civic_hive_bodysnatcher
+		# 	}
+		# 	NOR = {
+		# 		text = civic_tooltip_not_natural_design
+		# 		value = civic_natural_design
+		# 		value = civic_hive_natural_design
+		# 	}
+		# }
+	}
+
+	modifier = {
+			# country_starbase_influence_cost_mult = -0.5
+			# ship_hull_mult = 0.25
+			# ship_hull_regen_add_perc = 0.5
+			# ship_armor_regen_add_perc = 0.5
+			# army_damage_mult = 0.40
+			# category_biology_research_speed_mult = 0.20
+			# starbase_shipyard_build_cost_mult = -0.25
+			# country_naval_cap_mult = 0.33
+			# job_vore_livestock_per_pop = 0.1
+			# country_pop_enslaved_mult = 0.5 目前版本这个修正有点问题
+			pop_cat_vore_lover_political_power = 10
+		}
+	description = "origin_tooltip_vore_carnival_effects"
+	custom_tooltip = origin_tooltip_vore_carnival_effects
+	traits = {
+		trait = trait_vc_vore
+	}
+	flags = {
+		custom_start_screen
+	}
+
+	
+}

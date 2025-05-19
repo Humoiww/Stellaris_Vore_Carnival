@@ -1,0 +1,53 @@
+﻿l_simp_chinese:
+
+####################################
+ # 概念
+####################################
+
+
+  concept_vc_vore: "$trait_vc_vore$"
+
+
+  concept_vore_slavery: "$policy_vore_slavery$"
+  concept_vore_slavery_desc: "$policy_vore_slavery$是能够根据人口数量提供£job_livestock£§Y['concept_job_vore_livestock']$§!的政策，初始只能够选择最低的比例，但随着科技和传统的进步，可以解锁更多的选项"
+
+  concept_decision_vore_carnival: "$decision_vore_carnival$"
+  concept_decision_vore_carnival_desc: "$decision_vore_carnival$是一种大规模的丸吞仪式，在这个过程中，所有的['concept_job_vore_livestock']将被吞噬，并根据吞噬数量加强['concept_vc_vore']的效果。"
+
+  concept_job_vore_livestock: "$job_vore_livestock$"
+  concept_job_vore_livestock_desc: "$job_vore_livestock$是$origin_vore_carnival$起源的独有职业，只有['concept_vc_vore']的人口可以担任，初始会产出与£job_livestock£§Y$job_livestock$§!一致的$r_food$或$r_mine$和微量$r_research$， 但无法享受到来自£job_livestock£§Y$job_livestock$§!的修正加成，会被['concept_decision_vore_carnival']消耗，并根据吞噬人口和科技进展进一步产出更多资源。"
+
+
+  concept_vore_lover: "$pop_cat_vore_lover$"
+  concept_vore_lover_desc: "$pop_cat_vore_lover$是$origin_vore_carnival$起源的独有阶级，承担了整个国家的丸吞需求。而作为整个国家的精神导向，他们的权利甚至超过了统治者。"
+
+
+####################################
+ # 修正
+####################################
+
+  VC_vore_info_modifier: "物种目前效果"
+  VC_vore_info_modifier_desc: "物种目前效果[root.owner.origin_vore_carnival_vored_pops]"
+  VC_decision_vore_carnival_cooldown_allplanet_modifer: "丸吞狂欢冷却"
+  VC_decision_vore_carnival_cooldown_allplanet_modifer_desc: "美好的狂欢总是无法避免糟糕的善后工作……"
+
+
+####################################
+ # 杂项定义
+####################################
+  #丸吞者人口阶级
+  pop_cat_vore_lover: "丸吞牲畜"
+  pop_cat_vore_lover_plural: "$pop_cat_vore_lover$"
+  pop_cat_vore_lover_desc: "§Y$pop_cat_vore_lover$§!是我们国家最令人向往的阶级，他们每天只需享受吞噬的乐趣，期待着成为他人的佳肴。"
+  pop_cat_vore_lover_unemployment: "$pop_cat_vore_lover$"
+  pop_cat_vore_lover_unemployment_plural: "$pop_cat_vore_lover$"
+  pop_cat_vore_lover_unemployment_desc: "$pop_cat_vore_lover_desc$"
+  mod_pop_cat_vore_lover_political_power: "§Y$pop_cat_vore_lover$§!政治权力"
+  mod_pop_cat_vore_lover_happiness: "§Y$pop_cat_vore_lover$§!幸福度"
+  # mod_planet_jobs_vore_lover_produces_mult: "$pop_cat_vore_lover$人口资源产出"
+  mod_pop_cat_vore_lover_bonus_workforce_mult: "§Y$pop_cat_vore_lover$§!岗位效率"
+
+
+
+
+  

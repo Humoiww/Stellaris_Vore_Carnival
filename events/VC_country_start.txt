@@ -1,0 +1,51 @@
+namespace = vore_modifer
+
+# dc 的逻辑是这样写的，仿照一下
+planet_event = {
+	id = vore_modifer.1
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		if = {
+			limit = { owner = { has_origin = origin_vore_carnival } }
+			owner = { country_event = { id = vore_modifer.2 } }
+		}
+	}
+}
+
+country_event = {
+	id = vore_modifer.2
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+
+		root = {
+			# set_variable = { which = origin_female_in_shadow_trust value = 100 }
+			set_variable = { which = origin_vore_carnival_vored_pops value = 0 }
+			set_variable = { which = origin_vore_species_height value = 2 }
+		}
+		# add_modifier = {
+		# 	modifier = VC_vore_info_modifier
+		# 	multiplier = origin_vore_carnival_vored_pops
+		# 	# days = 1499
+		# }
+		# country_event = { id = CG_suc.120 days = 15 }
+		# country_event = { id = CG_suc.122 days = 1500 random = 500 }
+	}
+}
+
+country_event = {
+	id = vore_modifer.3
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		
+		# remove_modifier = VC_vore_info_modifier
+		# add_modifier = {
+		# 	modifier = VC_vore_info_modifier
+		# 	multiplier = origin_vore_carnival_vored_pops
+		# 	# days = 1499
+		# }
+
+	}
+}

@@ -1,0 +1,17 @@
+﻿l_simp_chinese:
+
+####################################
+# 物种特质
+####################################
+
+
+  planet_vore_livestock: "§E丸吞预备役§!"
+  job_vore_livestock: "§E丸吞预备役§!"
+  job_vore_livestock_desc: "§E丸吞预备役§!是整个国度最受欢迎的职业，在狂欢来到之前，他们会适度地成为猎物，满足国民的精神和肉体要求。"
+  mod_job_vore_livestock_add: "§E丸吞预备役§!"
+  job_vore_livestock_plural: "§E丸吞预备役§!"
+  mod_job_vore_livestock_add: "$job_vore_livestock$职位"
+  mod_job_vore_livestock_per_pop: "每$VALUE$个£pop£§G+1§!£job_livestock£$job_vore_livestock$职位"
+  mod_job_vore_livestock_per_pop_short: "$mod_job_vore_livestock_per_pop$"
+
+

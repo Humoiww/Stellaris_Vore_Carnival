@@ -1,0 +1,15 @@
+﻿l_simp_chinese:
+
+####################################
+# 物种特质
+####################################
+
+
+  origin_vore_carnival: "Voracious Kinship"
+  origin_vore_carnival_desc: "This civilization has been defined by a culture of mutual devouring. Each act of digestion not only delivers an unimaginable physiological satisfaction but also preserves fragments of the prey’s memories and knowledge during digestion, driving the continual evolution of their strength and intellect; through this cross‐body transmission of wisdom, they have risen to claim their place on the galactic stage."
+  origin_tooltip_vore_carnival_effects: "—$SPECIES_TRAITS$['trait_vc_vore']"
+  START_SCREEN_vore_carnival: "Long ago, we came to recognize the extraordinary nature of our bodies. Our pliant, plastic-like forms not only allow us to effortlessly consume prey equal to—or even several times—our own size, but also immerse the swallowed within an unprecedented realm of comfort, as if their entire being is cradled by a gentle embrace. \n At first, this was merely an efficient hunting technique; now, that ineffable satisfaction and rapture has become our deepest desire. As the frequency of our mutual consumption rose, we discovered that with each digestion, fragments of the prey’s memories and knowledge are preserved—allowing our strength and intellect to evolve through fusion. To devour and be devoured thus became the most sacred ritual and bond in our society. \n Through this transmission of knowledge, we forged the very first faster-than-light engine.
+
+Now, we share this unparalleled ecstasy with the entire universe!"
+
+  

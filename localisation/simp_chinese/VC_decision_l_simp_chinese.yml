@@ -1,0 +1,11 @@
+﻿l_simp_chinese:
+
+####################################
+ # 决议
+####################################
+
+  decision_vore_carnival:  "丸吞狂欢"
+  decision_vore_carnival_desc: "是时候开始我们美妙的丸吞庆典了"
+  decision_vore_carnival_effects: "吞噬所有的['concept_job_vore_livestock']，并根据吞噬的人口数量为['concept_vc_vore']人口提供永久的增益加成。 \n -吞噬的总人口：§G[Owner.origin_vore_carnival_vored_pops]§!\n -§G物种平均身高: [Owner.origin_vore_species_height]m§!"
+  VORE_CARNIVAL_COOLDOWN: "我们正在整理上次狂欢后的烂摊子"
+

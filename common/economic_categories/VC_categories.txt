@@ -1,0 +1,79 @@
+# pop_category_vore_lover = {
+# 	parent = planet_pops
+# 	generate_add_modifiers = {
+# 		upkeep
+# 		produces
+# 	}
+# 	modifier_category = pop_group
+# }
+
+
+planet_jobs = {
+	parent = planets
+	generate_mult_modifiers = {
+		produces
+		upkeep
+	}
+	generate_add_modifiers = {
+		produces
+		upkeep
+	}
+	triggered_produces_modifier = {
+		key = planet_jobs_vores
+		modifier_types = {
+			mult
+		}
+		trigger = {
+			is_robot_pop_group = no
+		}
+	}
+	modifier_category = pop_job
+}
+
+planet_pops = {
+	parent = planets
+	generate_add_modifiers = {
+		produces
+		upkeep
+	}
+	generate_mult_modifiers = {
+		produces
+		upkeep
+	}
+	modifier_category = pop_group
+
+	triggered_produces_modifier = {
+		key = planet_pops_vores
+		modifier_types = {
+			mult
+		}
+		trigger = {
+			has_trait = trait_vc_vore
+		}
+	}
+
+}
+
+
+planet_vc_vore = {
+    parent = planet_jobs_productive
+    generate_mult_modifiers = {
+        produces
+        cost
+        upkeep
+    }
+    generate_add_modifiers = {
+        produces
+    }
+    triggered_produces_modifier = {
+        key = planet_vc_vore_organic
+        modifier_types = {
+            mult
+        }
+        trigger = {
+            is_robot_pop_group = no
+        }
+    }
+    modifier_category = pop_job
+}
+

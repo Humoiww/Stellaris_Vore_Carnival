@@ -1,0 +1,24 @@
+### TRAIT CONCEPTS
+
+concept_vc_vore = {
+	icon = "gfx/interface/icons/traits/trait_vorec_relentless_vore_body.dds"
+	tooltip_override = "trait:trait_vc_vore"
+}
+
+concept_vore_slavery = {
+	# icon = "gfx/interface/icons/traits/trait_vorec_relentless_vore_body.dds"
+	# tooltip_override = "trait:trait_vc_vore"
+}
+
+concept_decision_vore_carnival{
+	# tooltip_override = "decisions:decision_vore_carnival"
+}
+
+concept_job_vore_livestock{
+	icon = "gfx/interface/icons/jobs/job_vore_livestock.dds"
+}
+
+
+concept_vore_lover = {
+	icon = "gfx\interface\icons\pop_categories\pop_cat_vore_lover.dds"
+}

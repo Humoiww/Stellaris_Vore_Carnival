@@ -1,0 +1,14 @@
+VC_vore_info_modifier = {
+	icon = "gfx\interface\icons\pop_categories\pop_cat_vore_lover.dds"
+	icon_frame = 1
+	pop_cat_vore_lover_bonus_workforce_mult = 0.001
+	pop_bonus_workforce_mult = 0.0001
+}
+
+
+
+VC_decision_vore_carnival_cooldown_allplanet_modifer = {
+	# icon = "gfx/interface/icons/planet_modifiers/CG_decision_alien_transforming_allplanet_modifer.dds"
+	# icon_frame = 3
+	pop_happiness = 0.1
+}

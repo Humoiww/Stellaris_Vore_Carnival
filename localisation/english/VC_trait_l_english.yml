@@ -1,0 +1,14 @@
+﻿l_simp_chinese:
+
+####################################
+# 物种特质
+####################################
+
+
+  trait_vc_vore: "丸吞天赋"
+  trait_vc_vore_desc: "§L这个物种有着一种奇特的天赋，其极富弹性的皮肤和优质的肉质使得他们同时成为了完美的捕食者和猎物。§!\n"
+  vc_vore_tooltip: "该物种会根据丸吞仪式吞噬掉的人口数量，获取多种不同的加成$MOD_EMPIRE_SIZE_POPS_MULT$:§G-10%§!\n£job_livestock£§Y$job_livestock$§!产出"
+
+
+
+

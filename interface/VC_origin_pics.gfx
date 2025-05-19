@@ -1,0 +1,16 @@
+###############################
+###     Origin Pictures     ###
+###############################
+
+spriteTypes = {	
+
+
+
+	spriteType = {
+		name = "GFX_origin_vc_voracious_carnivour"
+		texturefile = "gfx/event_pictures/origins/origin_vc_voracious_carnivour.dds"
+		alwaystransparent = yes
+	}
+}
+
+###

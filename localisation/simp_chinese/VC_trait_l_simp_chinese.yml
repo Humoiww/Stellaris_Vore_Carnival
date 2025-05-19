@@ -1,0 +1,14 @@
+﻿l_simp_chinese:
+
+####################################
+# 物种特质
+####################################
+
+
+  trait_vc_vore: "丸吞天赋"
+  trait_vc_vore_desc: "§L这个物种有着一种奇特的天赋，其极富弹性的皮肤和优质的肉质使得他们同时成为了完美的捕食者和猎物。§!\n"
+  trait_vc_vore_tooltip: "该物种会根据丸吞仪式吞噬掉的人口数量获取特殊加成，吞噬的人口统计和效果将于['concept_vore_slavery']的提示框展现：\n-$mod_pop_cat_vore_lover_bonus_workforce_mult$: +§G(吞噬的总人口数/10)%§!\n-$livestock_jobs_bonus_workforce_mult$: §G+100%§!\n-$mod_pop_cat_vore_lover_happiness$: §G+100%§!\n-$mod_pop_cat_ruler_happiness$: §R-30%§!\n-$mod_pop_cat_specialist_happiness$: §R-30%§!\n-$mod_pop_cat_worker_happiness$: §R-30%§!\n"
+
+
+
+

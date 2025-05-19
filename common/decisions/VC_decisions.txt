@@ -1,0 +1,185 @@
+
+
+#异种改造，首都决策
+#改造计划：孕育决策，按当前星球的初始物种人口数量，清楚所有的其余物种的人口，一段时间内食物维护费+100%，结束后生成等量的初始物种
+decision_alien_transforming = {
+	owned_planets_only = yes
+	resources = {
+		category = decisions
+		cost = {
+			unity = 400
+			love_juice = 400
+		}
+	}
+	prerequisites = { "tech_alien_transformation_act" }
+	potential = {
+		is_capital = yes
+		NOT = { has_modifier = CG_decision_alien_transforming_allplanet_modifer }
+		exists = owner
+		is_lust_empire = yes
+	}
+	allow = {
+		custom_tooltip = {
+			fail_text = NEED_UGLY_ALIEN2
+			owner = {
+				any_owned_pop_group = {
+					OR = {
+						is_ugly_pop = yes
+						is_lithoid = yes
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		add_modifier = { modifier = "CG_decision_alien_transforming_allplanet_modifer" days = 360 }
+		hidden_effect = {
+			owner = {
+				every_owned_planet = {
+					limit = {
+						any_owned_pop_group = {
+							OR = {
+								is_ugly_pop = yes
+								is_lithoid = yes
+							}
+						}
+						NOT = { has_modifier = CG_decision_alien_transforming_modifer }
+					}
+					planet_event = { id = CG_suc_decisions.10 }
+				}
+			}
+		}
+	}
+	ai_weight = {
+		weight = 0
+		modifier = {
+			add = 20
+			owner = {
+				count_owned_pop_amount = {
+					limit = {
+						OR = {
+							is_ugly_pop = yes
+							is_lithoid = yes
+						}
+					}
+					count > 4000
+				}
+			}
+		}
+	}
+}
+
+
+
+decision_leviathan_serves = {
+	owned_planets_only = yes
+	enactment_time = 360
+	resources = {
+		category = decisions
+		cost = {
+			influence = 75
+			food = 300
+		}
+	}
+	potential = {
+		exists = owner
+		owner = { 
+			has_origin = origin_female_in_shadow
+			NOT = { has_ascension_perk = ap_bumpy_cg_road_ahead_inverse }
+		}
+		any_country = { has_country_flag = origin_female_in_shadow@root.owner }
+	}
+	effect = {
+		add_deposit = d_leviathan_lair
+		hidden_effect = { owner = { add_origin_female_in_shadow_trust = { POINTS = 10 } } }
+	}
+	ai_weight = {
+		weight = 0
+		modifier = {
+			add = 100
+			NOT = { has_deposit = d_leviathan_lair }
+		}
+	}
+}
+
+decision_vore_carnival = {
+	owned_planets_only = yes
+	enactment_time = 0
+	resources = {
+		category = decisions
+		cost = {
+			unity = 0
+		}
+	}
+	potential = {
+		exists = owner
+		owner = {
+			has_origin = origin_vore_carnival
+			# NOT = { has_ascension_perk = ap_bumpy_cg_road_ahead_inverse }
+			# check_variable = { which = origin_female_in_shadow_trust value >= 600 }
+		}
+		NOT = {  }
+		# any_country = { has_country_flag = origin_female_in_shadow@root.owner }
+	}
+	allow = {
+		custom_tooltip = {
+			fail_text = VORE_CARNIVAL_COOLDOWN
+			NOT = { has_modifier = VC_decision_vore_carnival_cooldown_allplanet_modifer}
+			# owner = {
+			# 	any_owned_pop_group = {
+			# 		OR = {
+			# 			is_ugly_pop = yes
+			# 			is_lithoid = yes
+			# 		}
+			# 	}
+			# }
+		}
+	}
+	effect = {
+		custom_tooltip = decision_vore_carnival_effects
+
+
+		add_modifier = { modifier = "VC_decision_vore_carnival_cooldown_allplanet_modifer" days = 360 }
+
+
+		hidden_effect = {
+			export_trigger_value_to_variable = {
+				trigger = vore_livestock_pop_amount
+				variable = num_vore_livestock_pop
+			}
+			owner = {
+				export_trigger_value_to_variable = {
+					trigger = vore_livestock_pop_amount
+					variable = num_vore_livestock_pop
+				} 
+				add_origin_vore_carnival_vored_pops = { POINTS = num_vore_livestock_pop }
+				calculate_vore_species_height = {POINTS = 200}
+				country_event = { id = vore_modifer.3 }
+			}
+
+
+			
+
+			# owner = { add_origin_vore_carnival_vored_pops = { POINTS = 114 }}
+			divide_variable = { which = num_vore_livestock_pop value = 100 }
+			while = {
+				count = num_vore_livestock_pop
+				random_owned_pop_group = { 
+					limit = {
+						has_trait = trait_vc_vore # 假设这个逻辑是对的
+					}
+					kill_single_pop = yes }
+			}
+			
+			
+		}
+	}
+	ai_weight = {
+		weight = 0
+		modifier = {
+			add = 100
+			owner = { is_at_war = yes }
+		}
+	}
+}
+
