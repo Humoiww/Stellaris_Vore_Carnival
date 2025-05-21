@@ -3,7 +3,7 @@ tags={
 	"Vore"
 	"Gameplay"
 }
-name="voracious carnival"
+name="Voracious Carnival"
 picture="thumbnail.png"
 supported_version="v4.0.6"
 path="mod/vore carnival"
