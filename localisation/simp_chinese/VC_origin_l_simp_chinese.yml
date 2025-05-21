@@ -7,7 +7,7 @@
 
   origin_vore_carnival: "丸吞同裔"
   origin_vore_carnival_desc: "这一文明发展出一种互相吞噬的文化。他们的每一次吞噬不仅提供难以想象的生理满足，更能在消化过程中保留猎物的记忆与智慧，推动自身的力量与智识不断进化；在此跨体知识的传承下，他们走向了星际的舞台。"
-  origin_tooltip_vore_carnival_effects: "—$SPECIES_TRAITS$['concept_vc_vore']$NEW_LINE$—首都星球决议：['concept_vore_slavery']$NEW_LINE$—$decisions$：['concept_decision_vore_carnival']\n—人口阶级：['concept_vore_lover'] \n\n $CIVIC_NEGATIVE_EFFECTS$ 特质['concept_vc_vore']会导致['concept_vore_lover']以外的人口幸福度降低，且该特质无法手动移除。\n "
+  origin_tooltip_vore_carnival_effects: "—$SPECIES_TRAITS$['concept_vc_vore']$NEW_LINE$—政策：['concept_vore_slavery']$NEW_LINE$—首都星球决议：['concept_decision_vore_carnival']\n—人口阶级：['concept_vore_lover'] \n\n $CIVIC_NEGATIVE_EFFECTS$ 特质['concept_vc_vore']会导致['concept_vore_lover']以外的人口幸福度降低，且该特质无法手动移除。\n "
   origin_vore_carnival_description: "很久以前，我们便意识到自己身体的非凡之处。柔韧如胶的躯体让我们不但能够轻松吞噬与自身等体积甚至数倍于己的猎物,更能令猎物瞬间沉浸于前所未有的舒适幻境。 \n 起初，这仅是我们高效的狩猎手段；而今，那难以言喻的满足与陶醉，已化作我们心底最深的渴望。我们爱上了被吞噬，消化，分解的感觉……每一次的消化都会牺牲者的信息和知识，让我们的力量与智识在融合中不断进化。吞噬与被吞，遂成了我们社会最神圣的仪式与纽带。通过这样的知识传递，我们开发出了史上第一台曲速引擎。\n 现在，我们可以将这份无与伦比的愉悦共享给全宇宙！"
 
   

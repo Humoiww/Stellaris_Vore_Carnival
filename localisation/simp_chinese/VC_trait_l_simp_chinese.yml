@@ -6,8 +6,8 @@
 
 
   trait_vc_vore: "丸吞天赋"
-  trait_vc_vore_desc: "§L这个物种有着一种奇特的天赋，其极富弹性的皮肤和优质的肉质使得他们同时成为了完美的捕食者和猎物。§!\n"
-  trait_vc_vore_tooltip: "该物种会根据丸吞仪式吞噬掉的人口数量获取特殊加成，吞噬的人口统计和效果将于['concept_vore_slavery']的提示框展现：\n-$mod_pop_cat_vore_lover_bonus_workforce_mult$: +§G(吞噬的总人口数/10)%§!\n-$livestock_jobs_bonus_workforce_mult$: §G+100%§!\n-$mod_pop_cat_vore_lover_happiness$: §G+100%§!\n-$mod_pop_cat_ruler_happiness$: §R-30%§!\n-$mod_pop_cat_specialist_happiness$: §R-30%§!\n-$mod_pop_cat_worker_happiness$: §R-30%§!\n"
+  trait_vc_vore_desc: "§L这个物种有着一种奇特的天赋，其极富弹性的皮肤和优质的肉质使得他们同时成为了优秀的捕食者和完美的佳肴，但也这一特质也使得他们无心从事其他丸吞无关的事业。§!\n"
+  trait_vc_vore_tooltip: "该物种会根据丸吞仪式吞噬掉的人口数量获取特殊加成，吞噬的人口统计和效果将于['concept_decision_vore_carnival']的提示框展现：\n-['concept_species_height']: +§G(吞噬的总人口数/200)m§!\n-$livestock_jobs_bonus_workforce_mult$: §G+100%§!\n-$mod_pop_cat_vore_lover_happiness$: §G+1000%§!\n-$mod_pop_cat_ruler_happiness$: §R-50%§!\n-$mod_pop_cat_specialist_happiness$: §R-50%§!\n-$mod_pop_cat_worker_happiness$: §R-50%§!\n-$mod_pop_cat_civilian_happiness$: §R-50%§!\n-$mod_pop_cat_ruler_bonus_workforce_mult$: §R-10%§!\n-$mod_pop_cat_specialistr_bonus_workforce_mult$: §R-10%§!\n-$mod_pop_cat_worker_bonus_workforce_mult$: §R-10%§!\n-$mod_pop_civilian_bonus_workforce_mult$: §R-10%§!"
 
 
 

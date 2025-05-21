@@ -1,0 +1,153 @@
+
+
+
+vore_evolution_situation = {
+	picture = GFX_evt_evolutionary_predators
+	complete_icon_frame = GFX_situation_outcome_frame_green
+	complete_icon = GFX_situation_outcome_eat
+	category = positive
+	initial_progress = 0
+
+	on_progress_complete = {
+		custom_tooltip = vore_evolution_situation_outcome
+		hidden_effect = {
+			situation_event = { id = bio.1005 }
+		}
+	}
+
+	on_start = {
+		situation_event = { id = bio.1001 }
+		if = {
+			limit = {
+				owner = { has_country_flag = evolutionary_predators_consume }
+			}
+			set_situation_approach = situation_evolutionary_predators_consume
+		}
+		else_if = {
+			limit = {
+				owner = { has_country_flag = evolutionary_predators_incorporate }
+			}
+			set_situation_approach = situation_evolutionary_predators_incorporate
+		}
+		else_if = {
+			limit = {
+				owner = { has_country_flag = evolutionary_predators_synthesize }
+			}
+			set_situation_approach = situation_evolutionary_predators_synthesize
+		}
+	}
+
+	on_monthly = {
+		events = {
+			bio.1001
+		}
+	}
+
+	stages = {
+		stage_1 = {
+			icon = GFX_situation_stage_eat
+			icon_background = GFX_situation_stage_frame_green
+			end = {
+				base = 1000
+				mult = owner.num_evopred_situations_ran
+			}
+		}
+	}
+
+	approach = {
+		name = situation_evolutionary_predators_consume
+		icon = GFX_situation_approach_hungry
+		allow = {
+			owner = { can_have_slaves = yes }
+		}
+		icon_background = GFX_situation_approach_bg_yellow
+		on_select = {
+			custom_tooltip = evolutionary_predators_consume_tooltip
+			owner = {
+				remove_country_flag = evolutionary_predators_incorporate
+				remove_country_flag = evolutionary_predators_synthesize
+				set_country_flag = evolutionary_predators_consume
+			}
+		}
+	}
+
+	approach = {
+		name = situation_evolutionary_predators_incorporate
+		icon = GFX_situation_approach_incorporate
+		icon_background = GFX_situation_approach_bg_yellow
+		on_select = {
+			custom_tooltip = evolutionary_predators_incorporate_tooltip
+			owner = {
+				remove_country_flag = evolutionary_predators_consume
+				remove_country_flag = evolutionary_predators_synthesize
+				set_country_flag = evolutionary_predators_incorporate
+			}
+		}
+		default = yes
+	}
+
+	approach = {
+		name = situation_evolutionary_predators_synthesize
+		icon = GFX_situation_approach_synthesize
+		icon_background = GFX_situation_approach_bg_yellow
+		on_select = {
+			custom_tooltip = evolutionary_predators_synthesize_tooltip
+			owner = {
+				remove_country_flag = evolutionary_predators_consume
+				remove_country_flag = evolutionary_predators_incorporate
+				set_country_flag = evolutionary_predators_synthesize
+			}
+		}
+	}
+
+	monthly_progress = {
+		base = 0
+		modifier = {
+			add = owner.value:num_evolutionary_predators_planets
+			desc = evolutionary_predators_planets
+			check_variable_arithmetic = { which = owner.value:num_evolutionary_predators_planets value > 0 }
+		}
+		modifier = {
+			add = owner.value:num_evolutionary_predators_purge
+			desc = evolutionary_predators_purge
+			check_variable_arithmetic = { which = owner.value:num_evolutionary_predators_purge value > 0 }
+		}
+		modifier = {
+			add = owner.value:num_evolutionary_predators_species
+			desc = evolutionary_predators_species
+			check_variable_arithmetic = { which = owner.value:num_evolutionary_predators_species value > 0 }
+		}
+		modifier = {
+			owner = { is_gestalt = no }
+			add = owner.value:num_evolutionary_predators_council
+			desc = evolutionary_predators_council
+			check_variable_arithmetic = { which = owner.value:num_evolutionary_predators_council value > 0 }
+		}
+		modifier = {
+			owner = { subjects > 0 }
+			add = owner.value:num_evolutionary_predators_subjects
+			desc = evolutionary_predators_subjects
+			check_variable_arithmetic = { which = owner.value:num_evolutionary_predators_subjects value > 0 }
+		}
+		modifier = {
+			owner = { is_megacorp = yes }
+			add = owner.value:num_evolutionary_predators_megacorp
+			desc = evolutionary_predators_megacorp
+			check_variable_arithmetic = { which = owner.value:num_evolutionary_predators_megacorp value > 0 }
+		}
+		modifier = {
+			owner = {
+				has_modifier = agenda_mutation_divergence_evo_pred_finish
+			}
+			mult = 1.10		# Remember to update agenda_mutation_divergence_finish_evo_pred_tt if this value changes
+			desc = agenda_mutation_divergence_evo_pred_finish
+		}
+		modifier = {
+			owner = {
+				has_tradition = tr_mutation_stage_3_swap
+			}
+			mult = 1.25		# Remember to update tr_mutation_nucleotide_isolation_evo_pred_tt if this value changes
+			desc = tr_mutation_nucleotide_isolation
+		}
+	}
+}

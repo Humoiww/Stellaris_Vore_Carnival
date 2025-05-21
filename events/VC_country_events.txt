@@ -1,0 +1,37 @@
+namespace = vore_country
+
+
+
+country_event = {
+	id = vore_country.1
+	title = "vore_country.1.name"
+	desc = "vore_country.1.desc"
+	show_sound = event_celebration
+	picture = GFX_evt_crisis_defeated
+	# picture_event_data = {
+	# 	portrait = owner.ruler
+	# 	planet_background = owner.capital_scope
+	# 	graphical_culture = owner
+	# 	city_level = owner.capital_scope
+	# 	room = owner.ruler
+	# }
+	is_triggered_only = yes
+	# hide_window = no
+	option = {
+		name = vore_country.1.a
+		start_situation = {
+			type = evolutionary_predators_situation
+			target = root
+		}
+	}
+	# immediate = {
+		
+	# 	# remove_modifier = VC_vore_info_modifier
+	# 	# add_modifier = {
+	# 	# 	modifier = VC_vore_info_modifier
+	# 	# 	multiplier = origin_vore_carnival_vored_pops
+	# 	# 	# days = 1499
+	# 	# }
+
+	# }
+}

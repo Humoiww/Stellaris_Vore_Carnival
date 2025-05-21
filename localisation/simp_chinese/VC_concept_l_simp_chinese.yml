@@ -15,11 +15,23 @@
   concept_decision_vore_carnival_desc: "$decision_vore_carnival$是一种大规模的丸吞仪式，在这个过程中，所有的['concept_job_vore_livestock']将被吞噬，并根据吞噬数量加强['concept_vc_vore']的效果。"
 
   concept_job_vore_livestock: "$job_vore_livestock$"
-  concept_job_vore_livestock_desc: "$job_vore_livestock$是$origin_vore_carnival$起源的独有职业，只有['concept_vc_vore']的人口可以担任，初始会产出与£job_livestock£§Y$job_livestock$§!一致的$r_food$或$r_mine$和微量$r_research$， 但无法享受到来自£job_livestock£§Y$job_livestock$§!的修正加成，会被['concept_decision_vore_carnival']消耗，并根据吞噬人口和科技进展进一步产出更多资源。"
+  concept_job_vore_livestock_desc: "$job_vore_livestock$是$origin_vore_carnival$起源的独有职业，只有['concept_vc_vore']的人口可以担任，初始会产出与£job_livestock£§Y$job_livestock$§!一致的$r_food$和少量$r_research$和$r_unity$， 但无法享受到来自£job_livestock£§Y$job_livestock$§!的修正加成，会被['concept_decision_vore_carnival']消耗，并根据吞噬人口和科技进展进一步产出更多资源。"
 
 
   concept_vore_lover: "$pop_cat_vore_lover$"
   concept_vore_lover_desc: "$pop_cat_vore_lover$是$origin_vore_carnival$起源的独有阶级，承担了整个国家的丸吞需求。而作为整个国家的精神导向，他们的权利甚至超过了统治者。"
+
+
+  concept_species_height: "物种平均身高"
+  concept_species_height_desc: "随着丸吞仪式的进行，物种中可能会产生一些异常庞大的个体，导致物种平均身高增加，这有着多样的增益和减益效果.具体如下：\n$concept_species_height_desc1$\n\n\n§Y注意：§!这里的体积与食物消耗率的关系与现实情况完全相悖，一般来讲身高涨幅∝(食物需求^2.25),这里只为了游戏性和风味不做这种极端设计（实际上这也是为什么现实中没有什么真正意义上的巨型生物，消耗太高了）"
+  concept_species_height_desc1: "-测试文字\n -UwU"
+
+
+  concept_vore_evolution: "丸吞探寻"
+  concept_vore_evolution_desc: "探索我们自身的特性将推动局势的进展。\n§G每个阶段时：§!\n$t$—指定获得一个特殊任务，完成对应任务将为整个国家带来多种不同的加成\n§Y推进方式：§!\n$t$—人口担任['concept_vore_lover']阶级岗位\n$t$—举行['concept_decision_vore_carnival']\n$t$—丸吞相关事件触发"
+
+
+
 
 
 ####################################

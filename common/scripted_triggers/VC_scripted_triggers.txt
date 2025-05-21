@@ -1,3 +1,9 @@
 vore_livestock_pop_amount = {
 	num_assigned_jobs = {job = vore_livestock}
 }
+
+is_vc_lithoid = {
+	species = {
+		has_trait = trait_lithoid
+	}
+}

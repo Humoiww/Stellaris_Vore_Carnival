@@ -36,8 +36,15 @@ country_event = {
 
 country_event = {
 	id = vore_modifer.3
+	title = "vore_modifer.3.name"
+	desc = "vore_modifer.3.desc"
+	show_sound = event_celebration
+	picture = GFX_evt_excavation_team
 	is_triggered_only = yes
-	hide_window = yes
+	hide_window = no
+	option = {
+		name = MGHG_leader.1128.a
+	}
 	immediate = {
 		
 		# remove_modifier = VC_vore_info_modifier

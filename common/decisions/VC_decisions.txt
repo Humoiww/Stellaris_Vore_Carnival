@@ -154,7 +154,7 @@ decision_vore_carnival = {
 				} 
 				add_origin_vore_carnival_vored_pops = { POINTS = num_vore_livestock_pop }
 				calculate_vore_species_height = {POINTS = 200}
-				country_event = { id = vore_modifer.3 }
+				country_event = { id = vore_country.1 }
 			}
 
 

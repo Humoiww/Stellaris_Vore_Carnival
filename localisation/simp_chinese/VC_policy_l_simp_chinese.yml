@@ -8,15 +8,19 @@
  policy_vore_slavery: "丸吞比例"
  policy_vore_slavery_desc: "在我们找到最好的办法之前，盲目地让所有人被丸吞只会产生副作用…… 我们需要规划好让谁能先享受到丸吞"
 
- vore_slavery_10: "适当丸吞"
+ vore_slavery_10: "少量丸吞"
  vore_slavery_10_name: "$vore_slavery_10$"
  vore_slavery_10_desc: "根据目前的生产状态，我们最多只能保证10%的人口能够全心全意地被丸吞。人民的意见很大，但我们没有办法……"
 
- lust_limited: "节制纵欲"
- lust_limited_name: "$lust_limited$"
- lust_limited_desc: "繁衍是生命的本能，我们不会把它视作洪水猛兽，但它应该是一种私密的行为，只能在私人领域或合法妓院里进行。任何在公共场所的交配行为都不该被提倡。"
+ vore_slavery_40: "适当丸吞"
+ vore_slavery_40_name: "$vore_slavery_25$"
+ vore_slavery_40_desc: "随着我们的发觉，丸吞这一使命已经可以满足人民的基础需求了，现在保证40%的人口能够全心全意地被丸吞。可惜在军备方面，我们还需要更多人去工作……"
 
- lust_full: "允许纵欲"
- lust_full_name: "$lust_full$"
- lust_full_desc: "还有比禁欲更痛苦、更难熬的事情吗?我们决不能把这种痛苦强加于我们的人民身上!现在开始，我们的人民将有在任何时间、任何地点进行交配的权利，不受任何约束。"
+ vore_slavery_70: "超额丸吞"
+ vore_slavery_70_name: "$vore_slavery_70$"
+ vore_slavery_70_desc: "现在，通过丸吞我们已经能够获取绝大部分的物资了，也许是时候准备放弃我们原有的政府结果，全心全意地投入丸吞之中……"
+
+ vore_slavery_100: "全民丸吞"
+ vore_slavery_100_name: "$vore_slavery_100$"
+ vore_slavery_100_desc: "终于，我们不再需要过去落后的政府结构，每一个人都能够全身心的投入丸吞之中。"
 

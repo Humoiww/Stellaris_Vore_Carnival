@@ -30,26 +30,28 @@ vore_livestock = {
 	resources = {
 		category = planet_vc_vore
 		produces = {
-			physics_research = 0.5
-			engineering_research = 0.5
-			society_research = 0.5
+			physics_research = 1
+			engineering_research = 1
+			society_research = 1
+			unity = 1
 		}
 
 		produces = {
-			trigger = { is_lithoid = no }
+			trigger = {is_lithoid = no}
 			food = 4
 		}
 
 		# 石制人口
 		produces = {
-			trigger = { is_lithoid = yes }
+			trigger = {is_lithoid = yes}
+
 			minerals = 4
 		}
 	}
 
 	triggered_planet_modifier = {
 		potential = { always = yes }
-		planet_amenities_add = 50
+		planet_amenities_add = 100
 		mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
 	}
 

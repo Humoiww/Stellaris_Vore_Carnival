@@ -16,16 +16,23 @@ trait_vc_vore = {                                      # ID应该以“trait”�
     #    artisan_jobs_bonus_workforce_mult = 0.5        # 岗位消费品产出+50%
     #    leader_lifespan_add = 20                              # 领袖寿命
     #    leader_skill_levels = 1                               # 领袖等级上限
-        # pop_cat_vore_lover_bonus_workforce_mult = 1
-        # foundry_jobs_bonus_workforce_mult = 0.05
-        # pop_foundry_bonus_workforce_mult = 0.15
-        # planet_jobs_produces_mult = 0.1
-        ##
+    # pop_cat_vore_lover_bonus_workforce_mult = 1
+    # foundry_jobs_bonus_workforce_mult = 0.05
+    # pop_foundry_bonus_workforce_mult = 0.15
+    # planet_jobs_produces_mult = 0.1
+    ##
         livestock_jobs_bonus_workforce_mult = 1
-        pop_cat_vore_lover_happiness = 1
-        pop_cat_ruler_happiness = -0.30
-		pop_cat_specialist_happiness = -0.30
-		pop_cat_worker_happiness = -0.3 
+        pop_cat_vore_lover_happiness = 10
+        pop_cat_ruler_happiness = -0.50
+		pop_cat_specialist_happiness = -0.50
+		pop_cat_worker_happiness = -0.50
+        pop_cat_civilian_happiness = -0.50
+        pop_cat_slave_happiness = -0.50
+        pop_cat_ruler_bonus_workforce_mult = -0.1
+        pop_cat_specialist_bonus_workforce_mult = -0.1
+        pop_cat_worker_bonus_workforce_mult = -0.1
+        pop_civilian_bonus_workforce_mult = -0.1
+
     }
 
 
@@ -33,7 +40,12 @@ trait_vc_vore = {                                      # ID应该以“trait”�
             potential = {
                 always = yes
             }
-            pop_bonus_workforce_mult = 0.002
+            #来计算一下吧，第一次是480个人口，如果能达到50%全产就不错，那么实际就一应该是0.002左右
+            #那
+            pop_bonus_workforce_mult = 0.0005
+            pop_cat_vore_lover_bonus_workforce_mult = 0.0005
+            planet_pops_upkeep_mult = 0.001
+            pop_housing_usage_mult = 0.001
             # mult = owner.value:sensual_snake_eyes_mult
             mult = owner.origin_vore_carnival_vored_pops
 	}

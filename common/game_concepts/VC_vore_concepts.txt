@@ -10,7 +10,7 @@ concept_vore_slavery = {
 	# tooltip_override = "trait:trait_vc_vore"
 }
 
-concept_decision_vore_carnival{
+concept_decision_vore_carnival = {
 	# tooltip_override = "decisions:decision_vore_carnival"
 }
 
@@ -21,4 +21,8 @@ concept_job_vore_livestock{
 
 concept_vore_lover = {
 	icon = "gfx\interface\icons\pop_categories\pop_cat_vore_lover.dds"
+}
+
+concept_species_height = {
+	# tooltip_override = "decisions:decision_vore_carnival"
 }

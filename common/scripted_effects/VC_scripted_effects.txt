@@ -15,3 +15,22 @@ calculate_vore_species_height = {
 	divide_variable = {which = to_added_variable value = $POINTS$ }
 	change_variable = { which = origin_vore_species_height value =to_added_variable }
 }
+
+give_vore_evolution_situation_progress = {
+	if = {
+		limit = {
+			exists = owner
+			owner = {
+				has_origin = origin_vore_carnival
+			}
+		}
+		owner = {
+			random_situation = {
+				limit = {
+					is_situation_type = vore_evolution_situation
+				}
+				add_situation_progress = $PROGRESS$
+			}
+		}
+	}
+}
